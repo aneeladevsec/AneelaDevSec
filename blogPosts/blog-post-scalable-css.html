@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Structuring scalable CSS for growing projects.">
+    <meta name="keywords" content="CSS architecture, BEM, scalable CSS, design systems">
+    <meta name="author" content="Your Name">
+    
+    <title>Structuring Scalable CSS | Blog - Portfolio</title>
+    
+    <link rel="preload" href="../assets/css/style.css" as="style">
+    <link rel="preload" href="../assets/js/script.js" as="script">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <div id="animated-bg" class="animated-background">
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+        <div class="floating-element element-4"></div>
+        <div class="floating-element element-5"></div>
+    </div>
+
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html" aria-label="Homepage">
+                        <span class="logo-text">AneelaDevSec</span>
+                    </a>
+                </div>
+
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="../index.html" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="../about.html" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="../experience.html" class="nav-link" role="menuitem">Experience</a></li>
+                    <li role="none"><a href="../projects.html" class="nav-link" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="../blog.html" class="nav-link active" role="menuitem" aria-current="page">Blog</a></li>
+      
+                    <li role="none"><a href="../contact.html" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" role="main">
+        <article class="single-post" aria-label="Blog article">
+            <div class="single-post-container">
+                <div class="single-post-back">
+                    <a href="../blog.html" class="btn btn-secondary" aria-label="Back to blog list">
+                        <span class="btn-icon">←</span>
+                        <span class="btn-text">Back to Blog</span>
+                    </a>
+                </div>
+
+                <header class="single-post-header">
+                    <div class="single-post-meta">
+                        <span class="single-post-date">April 03, 2025</span>
+                        <span class="single-post-category">Dark Web</span>
+                    </div>
+                    <h1 class="single-post-title">Building a Dark Web Threat Intelligence System Using AI & NLP</h1>
+                    <p class="single-post-excerpt">
+                        The dark web has become a central hub for cybercriminal activity — from stolen credentials to zero-day exploits. Most organizations only discover breaches after damage is done.<br>To solve this, I built a Dark Web Threat Intelligence System that focuses on early detection of threats before they impact real systems.
+                    </p>
+                </header>
+
+              
+
+                <div class="single-post-body">
+                    <h2>Problem</h2>
+                    <p>
+                        Traditional security systems fail because:
+                    </p>
+                    <ul>
+                        <li>They rely on known attack signatures</li>
+                        <li>They react after incidents occur</li><li> They ignore underground intelligence sources</li>
+                    </ul>  <p>
+                       Meanwhile, attackers are actively sharing:
+                    </p>
+                    <ul>
+                        <li>Leaked databases</li>
+                        <li>Attack strategies</li>
+                        <li>Malware tools</li>
+                    </ul>
+
+                    <h2>Solution</h2>
+                    <p>
+                    This system continuously monitors and analyzes dark web data using:
+                    </p>
+                       <ul>
+                        <li>Web scraping</li>
+                        <li>Natural Language Processing (NLP)</li>
+                        <li>Machine Learning</li>
+                    </ul>
+
+                    <h3>System Architecture</h3>
+                    <h6>Data Collection</h6>
+                    <ul>
+                        <li>Scraping forums & marketplaces</li>
+                        <li>Collecting unstructured threat data</li>
+                    </ul>
+                   <h6>Data Processing</h6>
+                    <ul>
+                        <li>Cleaning noisy text</li>
+                        <li>Tokenization & normalization</li>
+                    </ul>
+                       <h6>Intelligence Engine</h6>
+                    <ul>
+                        <li>Threat classification</li>
+                        <li>Keyword/entity detection</li>
+                        <li>Risk scoring</li>
+                    </ul> 
+                       <h6>Output Layer</h6>
+                    <ul>
+                        <li>Structured intelligence</li>
+                        <li>Alerts & reports</li>
+                    </ul>     
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Real-time threat monitoring</li>
+                        <li>Automated risk assessment</li>
+                        <li>Customizable alerting system</li>
+                        <li>Credential leak detection</li>
+                        <li>Continuous monitoring</li>
+                        <li>AI-based threat prioritization</li>
+                        <li>Dashboard-ready data</li>
+                    </ul>
+                    <h2>Impact</h2>
+                    <p> Instead of waiting for breaches:<br>
+
+👉 This system helps detect threats before exploitation happens</p>
+<h2>Conclusion</h2>
+<p> 
+    Dark web intelligence is no longer optional — it’s essential.<br>
+
+This project demonstrates how AI can turn hidden data into actionable cybersecurity insights.
+</p>
+                </div>
+
+                <footer class="single-post-footer">
+                    <div class="single-post-tags">
+                        <span class="tag">CSS Architecture</span>
+                        <span class="tag">BEM</span>
+                        <span class="tag">Design Systems</span>
+                        <span class="tag">Scalability</span>
+                    </div>
+                </footer>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo" aria-label="Portfolio homepage">
+                        <span class="footer-logo-mark" aria-hidden="true">A</span>
+                        <span class="footer-logo-text">Aneela Ameen</span>
+                    </a>
+                    <p class="footer-tagline">From code to cyber defense — building the future of intelligent security.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <h2 class="sr-only">Footer navigation</h2>
+                    <ul class="footer-nav-list">
+                        <li><a href="../index.html" class="footer-nav-link">Home</a></li>
+                        <li><a href="../about.html" class="footer-nav-link">About</a></li>
+                        <li><a href="../experience.html" class="footer-nav-link">Experience</a></li>
+                        <li><a href="../projects.html" class="footer-nav-link">Projects</a></li>
+                        <li><a href="../blog.html" class="footer-nav-link">Blog</a></li>
+                      
+                        <li><a href="../contact.html" class="footer-nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-social" aria-label="Social media links">
+                    <h2 class="footer-heading">Connect</h2>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="https://github.com/aneeladevsec" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                                <span class="footer-social-icon" aria-hidden="true">GH</span>
+                                <span class="footer-social-text">GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aneela-ameen-81b8752b6/" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                                <span class="footer-social-icon" aria-hidden="true">in</span>
+                                <span class="footer-social-text">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                                <span class="footer-social-icon" aria-hidden="true">X</span>
+                                <span class="footer-social-text">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; <span id="current-year"></span> Aneela Ameen. All rights reserved.</p>
+                <p class="footer-meta">Building AI-powered cybersecurity systems for a safer digital future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js" defer></script>
+</body>
+</html>

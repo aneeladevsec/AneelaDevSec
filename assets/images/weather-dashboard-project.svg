@@ -1,0 +1,65 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cc0000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGrad3)"/>
+  
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="600" height="60" fill="#000000" opacity="0.5"/>
+  <rect x="0" y="0" width="600" height="3" fill="url(#redGrad3)"/>
+  
+  <!-- Weather Icon (Sun with clouds) -->
+  <g transform="translate(250, 120)">
+    <!-- Sun -->
+    <circle cx="50" cy="40" r="25" fill="#ff0000" opacity="0.7"/>
+    <circle cx="50" cy="40" r="20" fill="#ff0000"/>
+    
+    <!-- Sun rays -->
+    <line x1="50" y1="5" x2="50" y2="15" stroke="#ff0000" stroke-width="3"/>
+    <line x1="50" y1="65" x2="50" y2="75" stroke="#ff0000" stroke-width="3"/>
+    <line x1="15" y1="40" x2="25" y2="40" stroke="#ff0000" stroke-width="3"/>
+    <line x1="75" y1="40" x2="85" y2="40" stroke="#ff0000" stroke-width="3"/>
+    <line x1="25" y1="15" x2="32" y2="22" stroke="#ff0000" stroke-width="3"/>
+    <line x1="68" y1="58" x2="75" y2="65" stroke="#ff0000" stroke-width="3"/>
+    <line x1="75" y1="15" x2="68" y2="22" stroke="#ff0000" stroke-width="3"/>
+    <line x1="32" y1="58" x2="25" y2="65" stroke="#ff0000" stroke-width="3"/>
+    
+    <!-- Cloud -->
+    <ellipse cx="70" cy="60" rx="20" ry="12" fill="#ffffff" opacity="0.2"/>
+    <ellipse cx="85" cy="60" rx="18" ry="12" fill="#ffffff" opacity="0.15"/>
+  </g>
+  
+  <!-- Temperature Display -->
+  <g transform="translate(240, 190)">
+    <text x="60" y="30" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ff0000" text-anchor="middle">
+      72°
+    </text>
+  </g>
+  
+  <!-- Title -->
+  <text x="300" y="270" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ff0000" text-anchor="middle">
+    Weather Dashboard
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="300" y="300" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.7">
+    Real-time Weather Tracking
+  </text>
+  
+  <!-- Bottom Accent -->
+  <rect x="0" y="397" width="600" height="3" fill="url(#redGrad3)"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="350" r="3" fill="#ff0000" opacity="0.5"/>
+  <circle cx="550" cy="350" r="3" fill="#ff0000" opacity="0.5"/>
+  <rect x="230" y="320" width="140" height="2" fill="#ff0000" opacity="0.3"/>
+</svg>

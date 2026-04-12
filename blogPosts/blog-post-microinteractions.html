@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Designing delightful microinteractions for the web.">
+    <meta name="keywords" content="microinteractions, animation, UX, UI">
+    <meta name="author" content="Your Name">
+    
+    <title>Designing Delightful Microinteractions | Blog - Portfolio</title>
+    
+    <link rel="preload" href="../assets/css/style.css" as="style">
+    <link rel="preload" href="../assets/js/script.js" as="script">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <div id="animated-bg" class="animated-background">
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+        <div class="floating-element element-4"></div>
+        <div class="floating-element element-5"></div>
+    </div>
+
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html" aria-label="Homepage">
+                        <span class="logo-text">AneelaDevSec</span>
+                    </a>
+                </div>
+
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="../index.html" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="../about.html" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="../experience.html" class="nav-link" role="menuitem">Experience</a></li>
+                    <li role="none"><a href="../projects.html" class="nav-link" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="../blog.html" class="nav-link active" role="menuitem" aria-current="page">Blog</a></li>
+                    
+                    <li role="none"><a href="../contact.html" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" role="main">
+        <article class="single-post" aria-label="Blog article">
+            <div class="single-post-container">
+                <div class="single-post-back">
+                    <a href="../blog.html" class="btn btn-secondary" aria-label="Back to blog list">
+                        <span class="btn-icon">←</span>
+                        <span class="btn-text">Back to Blog</span>
+                    </a>
+                </div>
+
+                <header class="single-post-header">
+                    <div class="single-post-meta">
+                        <span class="single-post-date">March 28, 2026</span>
+                        <span class="single-post-category">Real-Time Detection</span>
+                    </div>
+                    <h1 class="single-post-title">Building a DDoS Detection and Real-Time Monitoring System Using Machine Learning</h1>
+                    <p class="single-post-excerpt">
+                       Distributed Denial of Service (DDoS) attacks are one of the most disruptive cyber threats — capable of taking down entire systems by overwhelming them with massive traffic.<br>Traditional defenses often fail because they rely on static rules, while modern attacks continuously evolve.<br>To address this, I built a DDoS Detection and Real-Time Monitoring System that uses:
+
+<br>👉 Machine Learning + Real-Time Traffic Analysis
+<br>
+to detect and respond to attacks instantly.
+                    </p>
+                </header>
+
+             
+
+                <div class="single-post-body">
+                    <h2>Problem</h2>
+                    <p>
+                       DDoS attacks work by:
+                        <ul>
+                            <li>Flooding servers with fake requests</li>
+                            <li>Exhausting bandwidth and system resources</li>
+                            <li>Making services unavailable to real users</li>
+                           <p>   Modern challenges include:</p>
+                            <li>High-speed attacks (Gbps level traffic)</li>
+                            <li>Distributed botnets</li>
+                            <li>Difficulty distinguishing real vs malicious traffic</li>
+                            
+                        </ul>
+                       Research shows that effective systems must analyze traffic patterns, packet rates, and anomalies in real time.
+                    </p>
+
+                   <h2>DDoS Detection System – Intelligent Network Defense</h2>
+<p>
+    This system provides a powerful, real-time defense against Distributed Denial-of-Service (DDoS) attacks by continuously monitoring network traffic and identifying abnormal behavior. By combining machine learning models, statistical anomaly detection, and real-time packet monitoring, it ensures early detection and rapid response to potential threats.
+</p>
+
+<h2>System Architecture</h2>
+
+<h3>1. Network Monitoring Layer</h3>
+<p>
+    The foundation of the system captures incoming traffic including packets and connection requests. It continuously tracks critical metrics such as request rate, IP distribution, and protocol usage. This real-time monitoring enables early identification of unusual traffic patterns before they escalate into full-scale attacks.
+</p>
+
+<h3>2. Feature Extraction</h3>
+<p>
+    Raw network data is transformed into meaningful features that can be analyzed effectively. These include packets per second, number of unique IP addresses, traffic spikes, and connection behavior patterns. This step is essential for enabling intelligent analysis by the detection engine.
+</p>
+
+<h3>3. Detection Engine (Machine Learning + Anomaly Detection)</h3>
+<p>
+    At the core of the system lies an intelligent detection engine powered by machine learning models such as Isolation Forest and other anomaly detection techniques. The system learns baseline traffic behavior and identifies deviations in real time, allowing it to detect both known and unknown attack patterns.
+</p>
+
+<h3>4. Threat Classification</h3>
+<p>
+    Detected traffic is categorized into different threat levels for better visibility and response prioritization:
+</p>
+<ul>
+    <li>🟢 Normal – No threat detected</li>
+    <li>🟡 Suspicious – Potential anomaly detected</li>
+    <li>🔴 High Risk – Likely malicious activity</li>
+    <li>🚨 Critical – Active attack detected</li>
+</ul>
+
+<h3>5. Response System</h3>
+<p>
+    Once a threat is identified, the system automatically initiates mitigation strategies. This includes blocking malicious IP addresses, generating alerts for administrators, and logging events for further analysis. The goal is to minimize damage and maintain system availability.
+</p>
+
+<h3>6. Real-Time Dashboard</h3>
+<p>
+    A dynamic web-based dashboard provides live insights into network activity. It displays traffic visualizations, threat levels, attack patterns, and overall system health. Technologies like WebSockets enable real-time updates, ensuring instant visibility into ongoing events.
+</p>
+
+<h2>Key Features</h2>
+<ul>
+    <li>⚡ Real-time traffic monitoring</li>
+    <li>🤖 Machine learning-based anomaly detection</li>
+    <li>📊 Interactive and live dashboard</li>
+    <li>🚫 Automated attack mitigation (IP blocking)</li>
+    <li>📡 Continuous network behavior analysis</li>
+</ul>
+
+<h2>Example Scenario</h2>
+<p>
+    Imagine a sudden spike in incoming traffic. The system detects this abnormal increase compared to baseline behavior. The machine learning model flags it as an anomaly, identifies suspicious IP addresses, and automatically blocks them. Simultaneously, the dashboard updates with alerts, allowing administrators to monitor the situation in real time.
+</p>
+
+<h2>Integration in Security Ecosystem</h2>
+<p>
+    This DDoS detection system acts as a critical network-level security layer and integrates seamlessly with other components:
+</p>
+<ul>
+    <li><strong>DDoS Detection System:</strong> Network-level protection</li>
+    <li><strong>Spam Detection:</strong> Message-level filtering</li>
+    <li><strong>Phishing Detection Extension:</strong> User-level protection</li>
+    <li><strong>Dark Web Intelligence:</strong> Threat intelligence gathering</li>
+    <li><strong>SentinelAI:</strong> Unified monitoring and control system</li>
+</ul>
+
+<h2>Key Engineering Highlights</h2>
+<ul>
+    <li>✔ Real-time packet and traffic monitoring</li>
+    <li>✔ Machine learning-driven anomaly detection</li>
+    <li>✔ Automated threat mitigation</li>
+    <li>✔ Full-stack dashboard integration</li>
+    <li>✔ Scalable and modular architecture</li>
+</ul>
+
+<h2>Real-World Relevance</h2>
+<p>
+    Modern applications such as cloud platforms, APIs, and SaaS systems are highly vulnerable to DDoS attacks. Effective defense systems must quickly detect anomalies, analyze traffic behavior, and respond automatically. Machine learning techniques like Random Forest, SVM, and anomaly detection models are widely adopted in real-world cybersecurity solutions.
+</p>
+
+<h2>Future Enhancements</h2>
+<ul>
+    <li> Integration of deep learning models for advanced traffic classification</li>
+    <li> eBPF-based kernel-level packet analysis for higher performance</li>
+    <li> Distributed detection across multiple nodes</li>
+    <li> Integration with SIEM tools for centralized security management</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>
+    As DDoS attacks continue to evolve, defense mechanisms must become more intelligent and proactive. This system demonstrates how combining real-time monitoring with machine learning can create a robust security solution capable of detecting and mitigating attacks before they cause significant damage.
+</p>
+                </div>
+
+                <footer class="single-post-footer">
+              <div class="single-post-tags">
+    <span class="tag">DDoS Protection</span>
+    <span class="tag">Cybersecurity</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">Anomaly Detection</span>
+    <span class="tag">Network Security</span>
+    <span class="tag">Real-Time Monitoring</span>
+</div>
+                </footer>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo" aria-label="Portfolio homepage">
+                        <span class="footer-logo-mark" aria-hidden="true">A</span>
+                        <span class="footer-logo-text">Aneela Ameen</span>
+                    </a>
+                    <p class="footer-tagline">From code to cyber defense — building the future of intelligent security.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <h2 class="sr-only">Footer navigation</h2>
+                    <ul class="footer-nav-list">
+                        <li><a href="../index.html" class="footer-nav-link">Home</a></li>
+                        <li><a href="../about.html" class="footer-nav-link">About</a></li>
+                        <li><a href="../experience.html" class="footer-nav-link">Experience</a></li>
+                        <li><a href="../projects.html" class="footer-nav-link">Projects</a></li>
+                        <li><a href="../blog.html" class="footer-nav-link">Blog</a></li>
+                  
+                        <li><a href="../contact.html" class="footer-nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-social" aria-label="Social media links">
+                    <h2 class="footer-heading">Connect</h2>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="https://github.com/aneeladevsec" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                                <span class="footer-social-icon" aria-hidden="true">GH</span>
+                                <span class="footer-social-text">GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aneela-ameen-81b8752b6/" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                                <span class="footer-social-icon" aria-hidden="true">in</span>
+                                <span class="footer-social-text">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                                <span class="footer-social-icon" aria-hidden="true">X</span>
+                                <span class="footer-social-text">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; <span id="current-year"></span> Aneela Ameen. All rights reserved.</p>
+                <p class="footer-meta">Building AI-powered cybersecurity systems for a safer digital future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js" defer></script>
+</body>
+</html>

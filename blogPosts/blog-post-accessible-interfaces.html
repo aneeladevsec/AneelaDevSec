@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Designing accessible interfaces without sacrificing aesthetics.">
+    <meta name="keywords" content="accessibility, UI, UX, web design, inclusive design">
+    <meta name="author" content="Your Name">
+    
+    <title>Designing Accessible Interfaces | Blog - Portfolio</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../assets/css/style.css" as="style">
+    <link rel="preload" href="../assets/js/script.js" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <div id="animated-bg" class="animated-background">
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+        <div class="floating-element element-4"></div>
+        <div class="floating-element element-5"></div>
+    </div>
+
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html" aria-label="Homepage">
+                        <span class="logo-text">AneelaDevSec</span>
+                    </a>
+                </div>
+
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="../index.html" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="../about.html" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="../experience.html" class="nav-link" role="menuitem">Experience</a></li>
+                    <li role="none"><a href="../projects.html" class="nav-link" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="../blog.html" class="nav-link active" role="menuitem" aria-current="page">Blog</a></li>
+                    
+                    <li role="none"><a href="../contact.html" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" role="main">
+        <article class="single-post" aria-label="Blog article">
+            <div class="single-post-container">
+                <div class="single-post-back">
+                    <a href="../blog.html" class="btn btn-secondary" aria-label="Back to blog list">
+                        <span class="btn-icon">←</span>
+                        <span class="btn-text">Back to Blog</span>
+                    </a>
+                </div>
+
+                <header class="single-post-header">
+                    <div class="single-post-meta">
+                        <span class="single-post-date">April 5, 2026</span>
+                        <span class="single-post-category">Real-Time Detection</span>
+                    </div>
+                    <h1 class="single-post-title">Real-Time AI Phishing Detection Using a Chrome Extension</h1>
+                    <p class="single-post-excerpt">
+                       Phishing remains one of the most dangerous cyber threats — often targeting users directly through deceptive links.
+                   <br>To tackle this, I built a real-time AI-powered phishing detection Chrome extension. </p>
+                </header>
+
+               
+                <div class="single-post-body">
+                    <h2>Problem</h2>
+                    <p>
+                         Users often:<br>
+
+Click malicious links unknowingly <br>
+Trust fake websites<br>
+Fall victim to social engineering<br>
+              </p>
+
+                    <h2>Solution</h2>
+                    <p>
+                         A browser extension that:<br>
+                         Monitors URLs in real time<br>
+Uses ML models for detection<br>
+Warns users instantly<br>
+                    </p>
+
+                    <h3>How It Works</h3>
+                    <ul>
+                        <li>User visits a website</li>
+                        <li>Extension captures the URL</li>
+                        <li>ML model analyzes features</li>
+                        <li>Classification result returned </li>
+                        <li>Warning displayed</li>
+                    </ul>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li> Real-time URL scanning </li>
+<li> AI-based classification </li>
+<li> Instant alerts </li>
+<li> Domain analysis</li>
+                    </ul>
+
+                    
+
+                    <h2>Impact</h2>
+                    <p>
+                Instead of post-attack detection:<br>
+
+👉 This system prevents attacks before user interaction
+                    </p>
+                    <h2>
+                        Conclusion
+                    </h2>
+                    <p> Client-side security is the future.<br>
+
+This project demonstrates how AI can be used directly in the browser to protect users in real time.</p>
+                </div>
+
+                <footer class="single-post-footer">
+                    <div class="single-post-tags">
+                        <span class="tag">URL scanning</span>
+                        <span class="tag">AI-based</span>
+                        <span class="tag">Instant alerts</span>
+                        <span class="tag">Domain analysis</span>
+                    </div>
+                </footer>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo" aria-label="Portfolio homepage">
+                        <span class="footer-logo-mark" aria-hidden="true">A</span>
+                        <span class="footer-logo-text">Aneela Ameen</span>
+                    </a>
+                    <p class="footer-tagline">Phishing remains one of the most dangerous cyber threats — often targeting users directly through deceptive links.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <h2 class="sr-only">Footer navigation</h2>
+                    <ul class="footer-nav-list">
+                        <li><a href="../index.html" class="footer-nav-link">Home</a></li>
+                        <li><a href="../about.html" class="footer-nav-link">About</a></li>
+                        <li><a href="../experience.html" class="footer-nav-link">Experience</a></li>
+                        <li><a href="../projects.html" class="footer-nav-link">Projects</a></li>
+                        <li><a href="../blog.html" class="footer-nav-link">Blog</a></li>
+                    
+                        <li><a href="../contact.html" class="footer-nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-social" aria-label="Social media links">
+                    <h2 class="footer-heading">Connect</h2>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="https://github.com/aneeladevsec" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                                <span class="footer-social-icon" aria-hidden="true">GH</span>
+                                <span class="footer-social-text">GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aneela-ameen-81b8752b6/" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                                <span class="footer-social-icon" aria-hidden="true">in</span>
+                                <span class="footer-social-text">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                                <span class="footer-social-icon" aria-hidden="true">X</span>
+                                <span class="footer-social-text">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; <span id="current-year"></span> Aneela Ameen. All rights reserved.</p>
+                <p class="footer-meta">Phishing remains one of the most dangerous cyber threats — often targeting users directly through deceptive links.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js" defer></script>
+</body>
+</html>

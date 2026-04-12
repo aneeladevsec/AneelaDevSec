@@ -1,0 +1,47 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cc0000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="600" height="60" fill="#000000" opacity="0.5"/>
+  <rect x="0" y="0" width="600" height="3" fill="url(#redGrad)"/>
+  
+  <!-- Shopping Cart Icon -->
+  <g transform="translate(240, 140)">
+    <path d="M 10 20 L 30 20 L 40 60 L 80 60" stroke="#ff0000" stroke-width="4" fill="none"/>
+    <circle cx="45" cy="75" r="5" fill="#ff0000"/>
+    <circle cx="75" cy="75" r="5" fill="#ff0000"/>
+    <rect x="35" y="25" width="50" height="35" fill="none" stroke="#ff0000" stroke-width="3"/>
+    <line x1="50" y1="10" x2="50" y2="25" stroke="#ff0000" stroke-width="3"/>
+    <line x1="70" y1="10" x2="70" y2="25" stroke="#ff0000" stroke-width="3"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="300" y="240" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ff0000" text-anchor="middle">
+    E-Commerce Platform
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="300" y="270" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.7">
+    Full Stack Shopping Solution
+  </text>
+  
+  <!-- Bottom Accent -->
+  <rect x="0" y="397" width="600" height="3" fill="url(#redGrad)"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="350" r="3" fill="#ff0000" opacity="0.5"/>
+  <circle cx="550" cy="350" r="3" fill="#ff0000" opacity="0.5"/>
+  <rect x="250" y="290" width="100" height="2" fill="#ff0000" opacity="0.3"/>
+</svg>
